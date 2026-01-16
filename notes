@@ -1,0 +1,16 @@
+package.json
+    Entry point to app
+    contains packages used in app
+    script (start, test)
+    Meta Data ( name, version, description)
+
+// Step to generate(create) package.json
+    Nodejs must be installed in machine
+        > go inside the project folder in terminal
+        > run command -> npm init
+        > Answer all questions
+        > type yes
+
+// step to install package
+    > npm i package_name or npm install package_name
+    
