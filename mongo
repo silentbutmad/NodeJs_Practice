@@ -1,0 +1,98 @@
+Roll No | Hindi | English   | Computer  |
+1       |   86  |           |           |
+2       |       |   78      |           |
+3       |   69  |           |   78      |
+
+Mongo -
+> Not a sql
+> JSON
+> Both structred and unstructured
+> Nested Data
+
+[
+    {
+        "rollNo" : 1,
+        "Hindi" : 2
+    },
+    {
+        "rollNo" : 2,
+        "English : 78
+    },
+    {
+        "rollNo" : 3,
+        "Hindi" : 69,
+        "Computer" : 78
+    }
+]
+
+
+SQL           VS        MongoDB
+Database                Database
+Table                   Collection
+Row                     Document
+Select                  Find
+Insert                  Insert
+Delete                  Remove
+Update                  Update      
+
+
+//Setup
+
+> Local
+
+# Window
+> Download MangoDB
+    https://www.mongodb.com/try/download/community
+
+> Create folder by the name of data in c drive
+    C:/data
+    > Inside data folder create db folder
+    >C:/data/db
+
+
+// Start mongo server (should always running if using in app)
+> open the cmd
+> go inside bin folder
+    C:\Program Files\MongoDB\Server\5.0\bin
+> mongod
+>do not close this cmd
+
+// Start mongo Client (Need to test query)
+> open the cmd
+> go inside bin folder
+    C:\Program Files\MongoDB\Server\5.0\bin
+>cd C:\Program Files\MongoDB\Server\5.0\bin
+>mongo
+
+
+////////
+
+See All the Databases
+    > show dbs
+
+To go inside db
+    > use dbname
+
+See All the collections
+    > show collections
+
+See data inside collection
+    > db.collectionname.find()
+
+create database
+> use dbname
+
+/// when we insert first query then only we able to use db using show command
+
+//insert data
+
+> db.collection_name.insert({json});
+
+default id
+_id
+> primary key 
+> Always unique
+> 12 byte
+    5 byte(random number)
+    3 byte(series)
+    4 byte(timestamp)
